@@ -55,9 +55,13 @@
     var main = document.getElementById("main");
     //获取Id为mian的标签
     function Leave(){
-        var colors = ["red","#008B00","yellow","pink","green"];
+        var colors = ["#EE0000","#008B00","#9B30FF","#8B0000","#0000FF","#FF1493","#228B22", "#CD1076"];
         //储存5个颜色
         var ipt = document.getElementById("ipt");
+        if(!ipt.value){
+          alert('请输入弹幕内容')
+          return 
+        }       
         //获取id为ipt的标签
         var launch = document.getElementById("launch");
         //获取id为launch的标签
